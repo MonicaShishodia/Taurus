@@ -1,0 +1,1040 @@
+[2016-11-17 15:42:03,907 INFO root] Taurus CLI Tool v1.7.3
+[2016-11-17 15:42:03,908 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': 'bzt.log', 'option': None, 'aliases': []}
+[2016-11-17 15:42:03,910 DEBUG root] Python: CPython 2.7.12
+[2016-11-17 15:42:03,910 DEBUG root] OS: ('Windows', 'R90BWA9C', '7', '6.1.7601', '', '')
+[2016-11-17 15:42:03,910 INFO root] Starting with configs: ['C:\\Work\\Test Solutions\\TaurusScripts\\eva_homepagetest.yml']
+[2016-11-17 15:42:03,914 INFO Engine] Configuring...
+[2016-11-17 15:42:03,917 DEBUG Engine] Reading machine configs from: C:\etc\bzt.d
+[2016-11-17 15:42:03,917 INFO Engine] No personal config: C:\Users\eqruuwq\.bzt-rc
+[2016-11-17 15:42:03,920 DEBUG Engine.Configuration] Configs: ['C:\\etc\\bzt.d\\10-base.json', 'C:\\etc\\bzt.d\\99-installID.yml']
+[2016-11-17 15:42:03,921 DEBUG Engine.Configuration] Reading C:\etc\bzt.d\10-base.json as JSON
+[2016-11-17 15:42:03,921 DEBUG Engine.Configuration] Reading C:\etc\bzt.d\99-installID.yml as YAML
+[2016-11-17 15:42:03,921 DEBUG Engine.Configuration] Configs: ['C:\\Work\\Test Solutions\\TaurusScripts\\eva_homepagetest.yml']
+[2016-11-17 15:42:03,921 DEBUG Engine.Configuration] Reading C:\Work\Test Solutions\TaurusScripts\eva_homepagetest.yml as YAML
+[2016-11-17 15:42:03,930 DEBUG root] Configs: ['C:\\Work\\Test Solutions\\TaurusScripts\\eva_homepagetest.yml']
+[2016-11-17 15:42:03,931 DEBUG root] Reading C:\Work\Test Solutions\TaurusScripts\eva_homepagetest.yml as YAML
+[2016-11-17 15:42:03,940 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.7.3&installID=fa8c15e8b466
+[2016-11-17 15:42:04,290 DEBUG Engine] Result: {"latest":"1.7.4","needsUpgrade":true}
+[2016-11-17 15:42:04,290 WARNING Engine] There is newer version of Taurus 1.7.4 available, consider upgrading
+[2016-11-17 15:42:04,296 INFO Engine] Artifacts dir: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000
+[2016-11-17 15:42:04,299 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective
+[2016-11-17 15:42:04,302 DEBUG Engine.Configuration] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.yml
+[2016-11-17 15:42:04,325 DEBUG Engine.Configuration] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.json
+[2016-11-17 15:42:04,325 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\merged.yml
+[2016-11-17 15:42:04,328 DEBUG root] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\merged.yml
+[2016-11-17 15:42:04,336 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\merged.json
+[2016-11-17 15:42:04,338 DEBUG root] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\merged.json
+[2016-11-17 15:42:04,339 DEBUG Engine] Add existing artifact (move=False): C:\Work\Test Solutions\TaurusScripts\eva_homepagetest.yml
+[2016-11-17 15:42:04,339 DEBUG Engine] Copying C:\Work\Test Solutions\TaurusScripts\eva_homepagetest.yml to C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\eva_homepagetest.yml
+[2016-11-17 15:42:04,342 INFO Engine] Preparing...
+[2016-11-17 15:42:04,345 DEBUG Engine] Module config: consolidator defaultdict(None, {u'ignore-labels': [u'ignore'], u'percentiles': [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0], u'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2016-11-17 15:42:04,345 DEBUG root] Importing module: bzt.modules.aggregator
+[2016-11-17 15:42:04,348 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\aggregator.pyc'>
+[2016-11-17 15:42:04,348 DEBUG Engine.consolidator] Exception in dehumanize_time(inf)
+[2016-11-17 15:42:04,348 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2016-11-17 15:42:04,348 DEBUG Engine] Module config: monitoring defaultdict(None, {u'class': u'bzt.modules.monitoring.Monitoring'})
+[2016-11-17 15:42:04,348 DEBUG root] Importing module: bzt.modules.monitoring
+[2016-11-17 15:42:04,401 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\monitoring.pyc'>
+[2016-11-17 15:42:04,401 DEBUG Engine] Module config: local defaultdict(None, {u'class': u'bzt.modules.provisioning.Local'})
+[2016-11-17 15:42:04,403 DEBUG root] Importing module: bzt.modules.provisioning
+[2016-11-17 15:42:04,403 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\provisioning.pyc'>
+[2016-11-17 15:42:04,403 DEBUG Engine] Module config: jmeter defaultdict(None, {u'path': u'~/.bzt/jmeter-taurus/', u'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst'], u'properties': defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeterengine.force.system.exit': u'true', u'jmeter.save.saveservice.connect_time': u'true', u'summariser.name': u'', u'mode': u'Stripped'}), u'class': u'bzt.modules.jmeter.JMeterExecutor'})
+[2016-11-17 15:42:04,403 DEBUG root] Importing module: bzt.modules.jmeter
+[2016-11-17 15:42:04,413 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\jmeter.pyc'>
+[2016-11-17 15:42:04,413 DEBUG Engine.local] Preparing executor: jmeter/65569568
+[2016-11-17 15:42:04,413 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\jmeter.log
+[2016-11-17 15:42:04,413 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2016-11-17 15:42:04,414 DEBUG Engine.jmeter] Port 4445 is free
+[2016-11-17 15:42:04,414 DEBUG Engine.jmeter] Using port 4445 for management
+[2016-11-17 15:42:04,414 DEBUG Engine.jmeter.JavaVM] Trying: ['java', '-version']
+[2016-11-17 15:42:04,707 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_101"
+Java(TM) SE Runtime Environment (build 1.8.0_101-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.101-b13, mixed mode)
+
+[2016-11-17 15:42:04,707 DEBUG Engine.jmeter.TclLibrary] Checking if TCL_LIBRARY variable is present in environment
+[2016-11-17 15:42:04,707 DEBUG Engine.jmeter.TclLibrary] TCL_LIBRARY environment variable is present
+[2016-11-17 15:42:04,707 DEBUG Engine.jmeter.JMeter] Trying jmeter: C:\Users\eqruuwq\.bzt\jmeter-taurus\bin\jmeter.bat
+[2016-11-17 15:42:04,714 DEBUG bzt.utils] Executing shell: [u'C:\\Users\\eqruuwq\\.bzt\\jmeter-taurus\\bin\\jmeter.bat', '-j', 'c:\\users\\eqruuwq\\appdata\\local\\temp\\jmeter8e9dmjlog', '--version']
+[2016-11-17 15:42:10,536 DEBUG Engine.jmeter.JMeter] JMeter check: Writing log file to: c:\users\eqruuwq\appdata\local\temp\jmeter8e9dmjlog
+    _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 3.0 r1743807  
+
+Copyright (c) 1999-2016 The Apache Software Foundation
+
+ / None
+[2016-11-17 15:42:10,538 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\requests.jmx
+[2016-11-17 15:42:10,539 DEBUG JMeterScenarioBuilder] Saving JMX to: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\requests.jmx
+[2016-11-17 15:42:10,542 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=20, throughput=None, ramp_up=3.0, hold=4.0, iterations=15, duration=7.0, steps=None)
+[2016-11-17 15:42:10,542 DEBUG Engine.jmeter] Original threads: 1.0
+[2016-11-17 15:42:10,545 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:10,545 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:10,546 DEBUG Engine.jmeter] Enforcing parent sample for transaction controller
+[2016-11-17 15:42:10,546 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\modified_requests.jmx
+[2016-11-17 15:42:10,546 DEBUG JMX] Saving JMX to: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\modified_requests.jmx
+[2016-11-17 15:42:10,546 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {u'jmeter.save.saveservice.autoflush': u'true', u'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': 'C:/Program Files/Taurus/bin/2016-11-17_15-42-04.296000', u'summariser.name': u'', u'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', u'mode': u'Stripped', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2016-11-17 15:42:10,546 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\jmeter-bzt.properties
+[2016-11-17 15:42:10,548 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2016-11-17 15:42:10,548 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\system.properties
+[2016-11-17 15:42:10,549 DEBUG Engine] Module config: final_stats defaultdict(None, {u'class': u'bzt.modules.reporting.FinalStatus'})
+[2016-11-17 15:42:10,549 DEBUG root] Importing module: bzt.modules.reporting
+[2016-11-17 15:42:10,773 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\reporting.pyc'>
+[2016-11-17 15:42:10,773 DEBUG Engine] Module config: console defaultdict(None, {u'disable': False, u'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2016-11-17 15:42:10,773 DEBUG root] Importing module: bzt.modules.console
+[2016-11-17 15:42:10,773 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\console.pyc'>
+[2016-11-17 15:42:10,773 DEBUG Engine] Module config: passfail defaultdict(None, {u'class': u'bzt.modules.passfail.PassFailStatus'})
+[2016-11-17 15:42:10,773 DEBUG root] Importing module: bzt.modules.passfail
+[2016-11-17 15:42:10,773 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\passfail.pyc'>
+[2016-11-17 15:42:10,773 DEBUG Engine] Module config: junit-xml defaultdict(None, {u'class': u'bzt.modules.reporting.JUnitXMLReporter'})
+[2016-11-17 15:42:10,773 DEBUG root] Importing module: bzt.modules.reporting
+[2016-11-17 15:42:10,773 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\reporting.pyc'>
+[2016-11-17 15:42:10,773 DEBUG Engine.console] Can't use console' screen, trying 'gui'
+[2016-11-17 15:42:10,780 DEBUG root] Importing module: bzt.modules.passfail
+[2016-11-17 15:42:10,780 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\passfail.pyc'>
+[2016-11-17 15:42:10,780 DEBUG root] Importing module: bzt.modules.passfail
+[2016-11-17 15:42:10,780 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\passfail.pyc'>
+[2016-11-17 15:42:10,780 DEBUG root] Importing module: bzt.modules.passfail
+[2016-11-17 15:42:10,780 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from 'C:\Program Files\Common Files\Python\2.7\lib\site-packages\bzt\modules\passfail.pyc'>
+[2016-11-17 15:42:10,780 DEBUG Engine] New artifact filename: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\xunit.xml
+[2016-11-17 15:42:10,783 DEBUG Engine.Configuration] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.yml
+[2016-11-17 15:42:10,811 DEBUG Engine.Configuration] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.json
+[2016-11-17 15:42:10,812 INFO Engine] Starting...
+[2016-11-17 15:42:10,813 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:10,813 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:10,813 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:10,813 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:10,813 INFO Engine.console] Waiting for results...
+[2016-11-17 15:42:10,815 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:10,815 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:10,816 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:10,816 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:10,816 DEBUG Engine.local] Delay setup: 0(start-at) + 0(delay) = 0
+[2016-11-17 15:42:10,819 DEBUG Engine.Configuration] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.yml
+[2016-11-17 15:42:10,848 DEBUG Engine.Configuration] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.json
+[2016-11-17 15:42:10,848 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:10,848 DEBUG bzt.utils] Executing shell: [u'C:\\Users\\eqruuwq\\.bzt\\jmeter-taurus\\bin\\jmeter.bat', '-n', '-t', 'C:\\Program Files\\Taurus\\bin\\2016-11-17_15-42-04.296000\\modified_requests.jmx', '-j', 'C:\\Program Files\\Taurus\\bin\\2016-11-17_15-42-04.296000\\jmeter.log', '-q', 'C:\\Program Files\\Taurus\\bin\\2016-11-17_15-42-04.296000\\jmeter-bzt.properties', '-S', 'C:\\Program Files\\Taurus\\bin\\2016-11-17_15-42-04.296000\\system.properties']
+[2016-11-17 15:42:10,910 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:10,910 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:10,910 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:10,910 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:10,911 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:10,911 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:10,911 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:11,155 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:11,155 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:11,155 INFO Engine.console] Did not mute console logging
+[2016-11-17 15:42:12,394 INFO Engine.console] Waiting for finish...
+[2016-11-17 15:42:12,411 DEBUG root] Font: (8, 16)
+[2016-11-17 15:42:12,471 DEBUG root] Font: (8, 16)
+[2016-11-17 15:42:12,474 DEBUG root] Font: (8, 16)
+[2016-11-17 15:42:12,496 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:12,496 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:12,496 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:12,496 DEBUG Engine] Iteration took 1.648 sec, sleeping for -0.648 sec...
+[2016-11-17 15:42:12,496 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:12,496 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:12,496 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:12,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:12,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:12,496 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:12,496 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:12,496 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:12,516 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:12,516 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:12,542 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:12,542 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:12,542 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:12,542 DEBUG Engine] Iteration took 0.045 sec, sleeping for 0.955 sec...
+[2016-11-17 15:42:13,496 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:13,496 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:13,496 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:13,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:13,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:13,496 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:13,496 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:13,496 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:13,513 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:13,513 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:13,543 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:13,543 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:13,543 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:13,543 DEBUG Engine] Iteration took 0.047 sec, sleeping for 0.953 sec...
+[2016-11-17 15:42:14,496 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:14,496 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:14,496 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:14,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:14,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:14,496 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:14,496 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:14,496 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:14,515 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:14,515 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:14,539 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:14,539 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:14,539 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:14,539 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:15,496 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:15,496 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:15,496 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:15,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:15,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:15,496 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:15,496 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:15,496 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:15,516 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:15,516 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:15,540 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:15,542 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:15,542 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:15,542 DEBUG Engine] Iteration took 0.045 sec, sleeping for 0.955 sec...
+[2016-11-17 15:42:16,496 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:16,496 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:16,496 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:16,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:16,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:16,496 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:16,496 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:16,496 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:16,496 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:16,496 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:16,522 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:16,523 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:16,523 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:16,523 DEBUG Engine] Iteration took 0.027 sec, sleeping for 0.973 sec...
+[2016-11-17 15:42:17,496 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:17,496 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:17,496 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:17,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:17,496 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:17,496 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:17,496 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:17,496 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:17,513 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:17,513 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:17,538 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:17,538 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:17,538 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:17,538 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:42:18,494 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:18,494 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:18,494 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:18,494 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File not appeared yet: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:18,494 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:18,494 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:18,494 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:18,494 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:18,494 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:18,494 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:18,517 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:18,519 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:18,519 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:18,519 DEBUG Engine] Iteration took 0.024 sec, sleeping for 0.976 sec...
+[2016-11-17 15:42:19,493 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:19,493 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:19,493 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:19,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] File is empty: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:19,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] No data to start reading yet
+[2016-11-17 15:42:19,493 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:19,493 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:19,493 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:19,510 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:19,510 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:19,535 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:19,535 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:19,535 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:19,535 DEBUG Engine] Iteration took 0.041 sec, sleeping for 0.959 sec...
+[2016-11-17 15:42:20,493 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:20,493 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:20,493 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:20,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Opening file: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:20,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:20,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 1 / 117 bytes (at speed 1048576)
+[2016-11-17 15:42:20,494 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Analyzed header line: ['timeStamp', 'elapsed', 'label', 'responseCode', 'responseMessage', 'threadName', 'success', 'bytes', 'grpThreads', 'allThreads', 'Latency', 'Hostname']
+[2016-11-17 15:42:20,494 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:20,494 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:20,494 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:20,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:20,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:20,542 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:20,542 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:20,542 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:20,542 DEBUG Engine] Iteration took 0.049 sec, sleeping for 0.951 sec...
+[2016-11-17 15:42:21,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:21,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:21,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:21,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:21,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:21,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:21,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:21,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:21,493 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:21,493 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:21,522 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:21,522 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:21,522 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:21,522 DEBUG Engine] Iteration took 0.030 sec, sleeping for 0.970 sec...
+[2016-11-17 15:42:22,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:22,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:22,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:22,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:22,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:22,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:22,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:22,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:22,512 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:22,512 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:22,572 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:22,572 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:22,573 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:22,573 DEBUG Engine] Iteration took 0.082 sec, sleeping for 0.918 sec...
+[2016-11-17 15:42:23,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:23,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:23,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:23,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:23,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:23,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:23,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:23,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:23,512 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:23,512 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:23,551 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:23,552 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:23,552 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:23,552 DEBUG Engine] Iteration took 0.060 sec, sleeping for 0.940 sec...
+[2016-11-17 15:42:24,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:24,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:24,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:24,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:24,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:24,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:24,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:24,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:24,492 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:24,493 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:24,516 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:24,516 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:24,516 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:24,516 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-11-17 15:42:25,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:25,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:25,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:25,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:25,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:25,493 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:25,493 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:25,493 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:25,648 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:25,648 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:25,686 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:25,687 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:25,687 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:25,687 DEBUG Engine] Iteration took 0.195 sec, sleeping for 0.805 sec...
+[2016-11-17 15:42:26,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:26,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:26,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:26,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:26,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:26,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:26,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:26,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:26,493 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:26,493 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:26,523 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:26,523 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:26,523 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:26,523 DEBUG Engine] Iteration took 0.031 sec, sleeping for 0.969 sec...
+[2016-11-17 15:42:27,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:27,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:27,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:27,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:27,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:27,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:27,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:27,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:27,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:27,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:27,549 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:27,549 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:27,549 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:27,549 DEBUG Engine] Iteration took 0.058 sec, sleeping for 0.942 sec...
+[2016-11-17 15:42:28,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:28,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:28,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:28,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:28,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:28,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:28,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:28,493 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:28,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:28,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:28,533 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:28,533 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:28,533 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:28,535 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:29,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:29,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:29,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:29,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:29,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:29,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:29,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:29,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:29,493 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:29,493 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:29,516 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:29,516 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:29,516 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:29,516 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-11-17 15:42:30,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:30,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:30,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:30,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:30,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:30,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:30,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:30,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:30,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:30,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:30,532 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:30,533 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:30,533 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:30,533 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:42:31,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:31,493 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:31,493 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:31,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:31,493 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:31,493 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:31,493 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:31,493 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:31,515 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:31,515 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:31,549 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:31,549 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:31,549 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:31,549 DEBUG Engine] Iteration took 0.058 sec, sleeping for 0.942 sec...
+[2016-11-17 15:42:32,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:32,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:32,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:32,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:32,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:32,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:32,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:32,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:32,493 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:32,493 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:32,516 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:32,516 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:32,516 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:32,516 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-11-17 15:42:33,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:33,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:33,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:33,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:33,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:33,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:33,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:33,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:33,510 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:33,510 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:33,552 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:33,553 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:33,553 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:33,553 DEBUG Engine] Iteration took 0.062 sec, sleeping for 0.938 sec...
+[2016-11-17 15:42:34,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:34,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:34,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:34,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:34,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:34,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:34,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:34,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:34,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:34,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:34,533 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:34,533 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:34,533 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:34,533 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:42:35,492 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:35,492 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:35,492 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:35,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:35,492 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:35,492 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:35,492 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:35,492 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:35,513 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:35,513 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:35,536 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:35,538 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:35,538 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:35,538 DEBUG Engine] Iteration took 0.046 sec, sleeping for 0.954 sec...
+[2016-11-17 15:42:36,490 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:36,490 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:36,490 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:36,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:36,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:36,490 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:36,490 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:36,490 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:36,490 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:36,492 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:36,517 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:36,517 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:36,517 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:36,517 DEBUG Engine] Iteration took 0.027 sec, sleeping for 0.973 sec...
+[2016-11-17 15:42:37,490 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:37,490 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:37,490 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:37,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:37,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:37,490 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:37,490 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:37,490 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:37,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:37,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:37,532 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:37,532 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:37,532 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:37,532 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:42:38,490 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:38,490 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:38,490 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:38,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:38,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:38,490 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:38,490 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:38,490 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:38,507 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:38,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:38,533 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:38,533 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:38,533 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:38,533 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:39,490 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:39,490 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:39,490 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:39,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:39,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:39,490 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:39,490 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:39,490 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:39,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:39,509 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:39,536 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:39,536 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:39,536 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:39,536 DEBUG Engine] Iteration took 0.045 sec, sleeping for 0.955 sec...
+[2016-11-17 15:42:40,490 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:40,490 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:40,490 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:40,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:40,490 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:40,490 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:40,490 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:40,490 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:40,490 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:40,490 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:40,515 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:40,515 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:40,515 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:40,515 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-11-17 15:42:41,489 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:41,489 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:41,489 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:41,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:41,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:41,489 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:41,489 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:41,489 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:41,507 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:41,507 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:41,532 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:41,532 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:41,532 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:41,532 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:42,489 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:42,489 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:42,489 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:42,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:42,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:42,489 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:42,489 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:42,489 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:42,506 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:42,506 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:42,530 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:42,530 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:42,530 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:42,530 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:42:43,489 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:43,489 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:43,489 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:43,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:43,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:43,489 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:43,489 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:43,489 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:43,506 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:43,506 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:43,532 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:43,532 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:43,532 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:43,532 DEBUG Engine] Iteration took 0.044 sec, sleeping for 0.956 sec...
+[2016-11-17 15:42:44,489 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:44,489 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:44,489 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:44,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:44,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:44,489 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:44,489 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:44,489 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:44,503 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:44,503 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:44,528 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:44,529 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:44,529 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:44,529 DEBUG Engine] Iteration took 0.040 sec, sleeping for 0.960 sec...
+[2016-11-17 15:42:45,489 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:45,489 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:45,489 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:45,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:45,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:45,489 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:45,489 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:45,489 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:45,507 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:45,507 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:45,533 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:45,533 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:45,533 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:45,535 DEBUG Engine] Iteration took 0.046 sec, sleeping for 0.954 sec...
+[2016-11-17 15:42:46,487 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:46,487 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:46,487 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:46,487 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:46,487 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:46,487 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:46,487 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:46,487 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:46,489 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:46,489 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:46,513 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:46,513 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:46,513 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:46,513 DEBUG Engine] Iteration took 0.026 sec, sleeping for 0.974 sec...
+[2016-11-17 15:42:47,486 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:47,486 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:47,486 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:47,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:47,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:47,486 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:47,486 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:47,486 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:47,502 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:47,502 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:47,526 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:47,526 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:47,526 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:47,526 DEBUG Engine] Iteration took 0.040 sec, sleeping for 0.960 sec...
+[2016-11-17 15:42:48,486 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:48,486 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:48,486 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:48,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:48,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:48,486 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:48,486 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:48,486 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:48,503 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:48,503 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:48,536 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:48,536 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:48,536 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:48,536 DEBUG Engine] Iteration took 0.050 sec, sleeping for 0.950 sec...
+[2016-11-17 15:42:49,486 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:49,486 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:49,486 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:49,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:49,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:49,486 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:49,486 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:49,486 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:49,505 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:49,505 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:49,529 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:49,529 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:49,529 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:49,529 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:50,486 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:50,486 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:50,486 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:50,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:50,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:50,486 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:50,486 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:50,486 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:50,503 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:50,503 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:50,528 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:50,529 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:50,529 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:50,529 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:42:51,486 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:51,486 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:51,486 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:51,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:51,486 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:51,486 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:51,486 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:51,486 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:51,516 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:51,516 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:51,555 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:51,555 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:51,555 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:51,555 DEBUG Engine] Iteration took 0.069 sec, sleeping for 0.931 sec...
+[2016-11-17 15:42:52,484 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:52,484 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:52,484 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:52,484 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:52,484 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:52,484 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:52,484 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:52,484 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:52,484 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:52,486 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:52,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:52,509 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:52,509 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:52,509 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-11-17 15:42:53,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:53,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:53,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:53,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:53,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:53,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:53,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:53,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:53,502 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:53,502 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:53,526 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:53,526 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:53,526 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:53,526 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:54,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:54,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:54,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:54,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:54,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:54,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:54,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:54,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:54,503 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:54,503 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:54,526 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:54,526 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:54,526 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:54,526 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:55,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:55,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:55,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:55,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:55,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:55,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:55,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:55,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:55,502 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:55,502 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:55,526 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:55,526 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:55,526 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:55,526 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:56,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:56,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:56,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:56,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:56,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:56,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:56,484 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:56,484 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:56,503 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:56,503 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:56,526 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:56,526 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:56,526 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:56,526 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:42:57,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:57,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:57,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:57,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:57,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:57,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:57,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:57,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:57,484 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:57,484 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:57,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:57,509 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:57,509 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:57,509 DEBUG Engine] Iteration took 0.026 sec, sleeping for 0.974 sec...
+[2016-11-17 15:42:58,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:58,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:58,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:58,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:58,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:58,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:58,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:58,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:58,506 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:58,506 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:58,532 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:58,532 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:58,532 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:58,532 DEBUG Engine] Iteration took 0.050 sec, sleeping for 0.950 sec...
+[2016-11-17 15:42:59,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:42:59,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:42:59,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:42:59,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:42:59,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:42:59,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:42:59,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:42:59,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:42:59,500 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:42:59,500 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:42:59,525 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:42:59,526 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:42:59,526 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:42:59,526 DEBUG Engine] Iteration took 0.043 sec, sleeping for 0.957 sec...
+[2016-11-17 15:43:00,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:00,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:00,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:00,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:00,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:00,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:00,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:00,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:00,483 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:00,483 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:00,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:00,509 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:00,509 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:00,509 DEBUG Engine] Iteration took 0.026 sec, sleeping for 0.974 sec...
+[2016-11-17 15:43:01,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:01,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:01,482 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:01,482 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:01,482 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:01,482 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:01,482 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:01,482 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:01,497 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:01,497 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:01,522 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:01,522 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:01,522 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:01,522 DEBUG Engine] Iteration took 0.040 sec, sleeping for 0.960 sec...
+[2016-11-17 15:43:02,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:02,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:02,482 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:02,482 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:02,482 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:02,482 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:02,482 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:02,482 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:02,499 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:02,500 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:02,529 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:02,529 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:02,529 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:02,529 DEBUG Engine] Iteration took 0.048 sec, sleeping for 0.952 sec...
+[2016-11-17 15:43:03,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:03,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:03,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:03,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:03,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:03,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:03,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:03,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:03,505 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:03,505 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:03,536 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:03,536 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:03,536 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:03,536 DEBUG Engine] Iteration took 0.055 sec, sleeping for 0.945 sec...
+[2016-11-17 15:43:04,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:04,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:04,482 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:04,482 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:04,482 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:04,482 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:04,482 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:04,482 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:04,483 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:04,483 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:04,509 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:04,509 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:04,509 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:04,509 DEBUG Engine] Iteration took 0.027 sec, sleeping for 0.973 sec...
+[2016-11-17 15:43:05,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:05,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:05,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:05,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:05,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:05,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:05,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:05,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:05,500 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:05,500 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:05,549 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:05,549 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:05,551 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:05,551 DEBUG Engine] Iteration took 0.068 sec, sleeping for 0.932 sec...
+[2016-11-17 15:43:06,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:06,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:06,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:06,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:06,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:06,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 0
+[2016-11-17 15:43:06,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:06,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:06,483 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:06,483 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:06,507 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:06,507 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:06,507 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:06,507 DEBUG Engine] Iteration took 0.025 sec, sleeping for 0.975 sec...
+[2016-11-17 15:43:07,483 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:07,483 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:07,483 DEBUG Engine.jmeter.JTLErrorsReader] File not exists: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:07,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:07,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 2 / 162 bytes (at speed 1048576)
+[2016-11-17 15:43:07,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 1
+[2016-11-17 15:43:07,483 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:07,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:07,500 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:07,500 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:07,525 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:07,525 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:07,525 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:07,525 DEBUG Engine] Iteration took 0.042 sec, sleeping for 0.958 sec...
+[2016-11-17 15:43:08,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:08,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:08,482 DEBUG Engine.jmeter.JTLErrorsReader] Opening C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\error.jtl
+[2016-11-17 15:43:08,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:08,489 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 4 / 699 bytes (at speed 1048576)
+[2016-11-17 15:43:08,489 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-11-17 15:43:08,489 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2016-11-17 15:43:08,489 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:08,505 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:08,505 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:08,532 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:08,532 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:08,532 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:08,532 DEBUG Engine] Iteration took 0.050 sec, sleeping for 0.950 sec...
+[2016-11-17 15:43:09,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:09,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:09,499 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:09,500 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 11 / 4052 bytes (at speed 1048576)
+[2016-11-17 15:43:09,500 DEBUG Engine.jmeter.JTLReader] Buffer len: 3
+[2016-11-17 15:43:09,500 DEBUG Engine.jmeter.JTLReader] Aggregating: 1479377540
+[2016-11-17 15:43:09,500 DEBUG Engine.consolidator] Consolidator buffer[1]: [1479377540]
+[2016-11-17 15:43:09,500 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:09,517 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:09,517 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:09,543 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:09,543 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:09,545 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:09,545 DEBUG Engine] Iteration took 0.063 sec, sleeping for 0.937 sec...
+[2016-11-17 15:43:10,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:10,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:10,500 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:10,500 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 3 / 1341 bytes (at speed 1048576)
+[2016-11-17 15:43:10,500 DEBUG Engine.jmeter.JTLReader] Putting sample 1479377540 into 1479377541
+[2016-11-17 15:43:10,500 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-11-17 15:43:10,500 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 97s
+[2016-11-17 15:43:10,502 DEBUG Engine.consolidator] Consolidator buffer[1]: [1479377540]
+[2016-11-17 15:43:10,502 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:10,515 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:10,515 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:10,543 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:10,545 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:10,545 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:10,545 DEBUG Engine] Iteration took 0.063 sec, sleeping for 0.937 sec...
+[2016-11-17 15:43:11,482 DEBUG Engine] Checking <bzt.modules.provisioning.Local object at 0x0000000003D64EB8>
+[2016-11-17 15:43:11,482 DEBUG Engine] Checking <bzt.modules.aggregator.ConsolidatingAggregator object at 0x0000000003D64F60>
+[2016-11-17 15:43:11,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:11,483 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:11,483 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-11-17 15:43:11,483 DEBUG Engine.consolidator] Consolidator buffer[1]: [1479377540]
+[2016-11-17 15:43:11,483 DEBUG Engine] Checking <bzt.modules.monitoring.Monitoring object at 0x0000000003DA1860>
+[2016-11-17 15:43:11,484 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x0000000003ED5E48>
+[2016-11-17 15:43:11,484 DEBUG Engine] Checking <bzt.modules.console.ConsoleStatusReporter object at 0x0000000003EF3EB8>
+[2016-11-17 15:43:11,507 DEBUG Engine] Checking <bzt.modules.reporting.FinalStatus object at 0x000000000408B400>
+[2016-11-17 15:43:11,507 DEBUG Engine] Checking <bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>
+[2016-11-17 15:43:11,507 DEBUG Engine] Checking <bzt.modules.reporting.JUnitXMLReporter object at 0x0000000004096EF0>
+[2016-11-17 15:43:11,509 DEBUG Engine.Configuration] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.yml
+[2016-11-17 15:43:11,539 DEBUG Engine.Configuration] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.json
+[2016-11-17 15:43:11,540 WARNING Engine] Please wait for graceful shutdown...
+[2016-11-17 15:43:11,542 INFO Engine] Shutting down...
+[2016-11-17 15:43:11,543 DEBUG Engine.local] Shutdown jmeter/Eva
+[2016-11-17 15:43:11,546 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-11-17 15:43:11,549 DEBUG Engine.Configuration] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.yml
+[2016-11-17 15:43:11,578 DEBUG Engine.Configuration] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.json
+[2016-11-17 15:43:11,581 INFO Engine] Post-processing...
+[2016-11-17 15:43:11,582 DEBUG Engine.local] Post-process jmeter/Eva
+[2016-11-17 15:43:11,582 DEBUG Engine] Add existing artifact (move=True): C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\modified_requests.jmx
+[2016-11-17 15:43:11,582 DEBUG Engine] No need to copy C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\modified_requests.jmx
+[2016-11-17 15:43:11,584 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Reading JTL: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\kpi.jtl
+[2016-11-17 15:43:11,584 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read lines: 0 / 0 bytes (at speed 1048576)
+[2016-11-17 15:43:11,584 DEBUG Engine.jmeter.JTLReader] Buffer len: 2
+[2016-11-17 15:43:11,584 DEBUG Engine.jmeter.JTLReader] Aggregating: 1479377541
+[2016-11-17 15:43:11,585 DEBUG Engine.jmeter.JTLReader] Aggregating: 1479377542
+[2016-11-17 15:43:11,586 DEBUG Engine.consolidator] Consolidator buffer[3]: [1479377540, 1479377541, 1479377542]
+[2016-11-17 15:43:11,586 DEBUG Engine.consolidator] Merging into 1479377540
+[2016-11-17 15:43:11,586 DEBUG Engine.consolidator] Merging 1479377540
+[2016-11-17 15:43:11,588 DEBUG root] 1479377540 Alert: avg-rt>40ms for 1 sec: True
+[2016-11-17 15:43:11,589 DEBUG root] No label portfolio in ['', 'home']
+[2016-11-17 15:43:11,589 DEBUG Engine.consolidator] Processed datapoint: 1479377540/None
+[2016-11-17 15:43:11,589 DEBUG Engine.consolidator] Merging into 1479377541
+[2016-11-17 15:43:11,589 DEBUG Engine.consolidator] Merging 1479377541
+[2016-11-17 15:43:11,592 DEBUG root] 1479377541 Alert: avg-rt>40ms for 2 sec: True
+[2016-11-17 15:43:11,592 DEBUG root] No label portfolio in ['', 'home']
+[2016-11-17 15:43:11,592 DEBUG Engine.consolidator] Processed datapoint: 1479377541/None
+[2016-11-17 15:43:11,592 DEBUG Engine.consolidator] Merging into 1479377542
+[2016-11-17 15:43:11,592 DEBUG Engine.consolidator] Merging 1479377542
+[2016-11-17 15:43:11,595 DEBUG root] 1479377542 Alert: avg-rt>40ms for 3 sec: True
+[2016-11-17 15:43:11,595 DEBUG root] No label portfolio in ['', 'home']
+[2016-11-17 15:43:11,595 DEBUG Engine.consolidator] Processed datapoint: 1479377542/None
+[2016-11-17 15:43:11,595 INFO Engine.final_stats] Test duration: 0:01:01
+[2016-11-17 15:43:11,598 INFO Engine.final_stats] Samples count: 20, 70.00% failures
+[2016-11-17 15:43:11,598 INFO Engine.final_stats] Average times: total 47.417, latency 0.940, connect 0.000
+[2016-11-17 15:43:11,601 INFO Engine.final_stats] Percentile 0.0%: 46.498
+[2016-11-17 15:43:11,602 INFO Engine.final_stats] Percentile 50.0%: 47.204
+[2016-11-17 15:43:11,604 INFO Engine.final_stats] Percentile 90.0%: 48.747
+[2016-11-17 15:43:11,605 INFO Engine.final_stats] Percentile 95.0%: 49.368
+[2016-11-17 15:43:11,607 INFO Engine.final_stats] Percentile 99.0%: 49.368
+[2016-11-17 15:43:11,608 INFO Engine.final_stats] Percentile 99.9%: 49.368
+[2016-11-17 15:43:11,608 INFO Engine.final_stats] Percentile 100.0%: 49.368
+[2016-11-17 15:43:11,611 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2016-11-17 15:43:11,611 INFO Engine.final_stats] Test duration: 0:01:01
+[2016-11-17 15:43:11,611 INFO Engine.final_stats] Samples count: 20, 70.00% failures
+[2016-11-17 15:43:11,614 INFO Engine.final_stats] Average times: total 47.417, latency 0.940, connect 0.000
+[2016-11-17 15:43:11,615 INFO Engine.final_stats] Percentile 0.0%: 46.498
+[2016-11-17 15:43:11,617 INFO Engine.final_stats] Percentile 50.0%: 47.204
+[2016-11-17 15:43:11,618 INFO Engine.final_stats] Percentile 90.0%: 48.747
+[2016-11-17 15:43:11,618 INFO Engine.final_stats] Percentile 95.0%: 49.368
+[2016-11-17 15:43:11,621 INFO Engine.final_stats] Percentile 99.0%: 49.368
+[2016-11-17 15:43:11,621 INFO Engine.final_stats] Percentile 99.9%: 49.368
+[2016-11-17 15:43:11,622 INFO Engine.final_stats] Percentile 100.0%: 49.368
+[2016-11-17 15:43:11,624 INFO Engine.final_stats] Dumping final status as XML: junit.xml
+[2016-11-17 15:43:11,628 INFO Engine.final_stats] Dumping final status as CSV: Eva.csv
+[2016-11-17 15:43:11,631 DEBUG root] No label   in ['', 'home']
+[2016-11-17 15:43:11,631 DEBUG Engine.junit-xml] Processing passfail objects: [<bzt.modules.passfail.PassFailStatus object at 0x000000000408B7B8>]
+[2016-11-17 15:43:11,632 INFO Engine.junit-xml] Writing JUnit XML report into: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\xunit.xml
+[2016-11-17 15:43:11,638 DEBUG Engine.Configuration] Dumping YAML config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.yml
+[2016-11-17 15:43:11,671 DEBUG Engine.Configuration] Dumping JSON config into C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000\effective.json
+[2016-11-17 15:43:11,673 INFO root] Artifacts dir: C:\Program Files\Taurus\bin\2016-11-17_15-42-04.296000
+[2016-11-17 15:43:11,676 INFO root] Done performing with code: 0
+[2016-11-17 15:43:11,677 DEBUG root] Closing log handler: C:\Program Files\Taurus\bin\bzt.log
