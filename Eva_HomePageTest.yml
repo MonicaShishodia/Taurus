@@ -1,0 +1,61 @@
+---
+execution:
+- concurrency: 20
+  hold-for: 4s
+  iterations: 15
+  ramp-up: 3s
+  scenario: Eva
+
+reporting:
+ - module: final_stats
+   summary: true
+   percentiles: true
+   failed-labels: false
+   test-duration: true
+   dump-xml: junit.xml
+   dump-csv: Eva.csv
+ - module: passfail
+   criteria:
+    - avg-rt of home>40ms for 10s, stop as failed
+    - avg-rt of portfolio>40ms for 10s, continue as failed
+    - fail of >10% for, continue as failed
+ - module: junit-xml
+   data-source: pass-fail
+
+scenarios:
+  Eva:
+    default-address: /
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0
+    requests:
+    - assert:
+      - contains:
+        - '200'
+        not: false
+        regexp: true
+        subject: http-code
+      label: home
+      method: GET
+      url: http://172.29.221.77/#hash=Home
+    - assert:
+      - contains:
+        - '200'
+        not: false
+        regexp: true
+        subject: http-code
+      label: Process
+      method: GET
+      url: http://172.29.221.77/#hash=Home/Processes
+    - assert:
+      - contains:
+        - '200'
+        not: false
+        regexp: true
+        subject: http-code
+      label: Functions
+      method: GET
+      url: http://172.29.221.77/#hash=Home/Functions
+    store-cache: true
+    store-cookie: true
+    use-dns-cache-mgr: true
+
