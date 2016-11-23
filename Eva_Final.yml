@@ -18,3 +18,4 @@ reporting:
    failed-labels: false
    test-duration: true
    dump-csv: Eva.csv
+   dump-xml: Eva.xml
