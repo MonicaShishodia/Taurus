@@ -15,6 +15,14 @@ reporting:
 - module: junit-xml
   filename: Evajunit.xml
   data-source: pass-fail
+  
+- module: final_stats
+  summary: true
+  percentiles: true
+  failed-labels: false
+  test-duration: true
+  dump-csv: Eva.csv
+  
 services:
 - module: passfail
 criteria:
