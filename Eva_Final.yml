@@ -17,3 +17,5 @@ reporting:
   data-source: pass-fail
 services:
 - module: passfail
+criteria:
+  - fail>5% for 10s, stop as failed
