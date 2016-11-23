@@ -14,3 +14,9 @@ scenarios:
 reporting:
 - module: junit-xml
   filename: Evajunit.xml
+  data-source: pass-fail
+services:
+- module: passfail
+  criteria:
+  - avg-rt of evademo_jmeter>50ms for 10s, stop as failed
+  - fail of evademo_jmeter>50% for 10s, stop as failed
