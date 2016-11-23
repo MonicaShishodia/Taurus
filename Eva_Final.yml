@@ -12,14 +12,9 @@ scenarios:
       method: GET
       url: http://172.29.221.77/
 reporting:
-- module: final_stats
-  summary: true  # overall samples count and percent of failures
-  percentiles: true  # display average times and percentiles
-  failed-labels: false  # provides list of sample labels with 
-- module: junit-xml
-  filename: C:\Program Files (x86)\Jenkins\workspace\TestTaurus_Selenium\dump.xml
-
-failures:
-  test-duration: true  # provides test duration
-  dump-xml: Eva_final.xml
-  dump-csv: Eva_final.csv
+ - module: final_stats
+   summary: true
+   percentiles: true
+   failed-labels: false
+   test-duration: true
+   dump-csv: Eva.csv
