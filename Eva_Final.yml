@@ -12,9 +12,5 @@ scenarios:
       method: GET
       url: http://172.29.221.77/
 reporting:
- - module: final_stats
-   summary: true
-   percentiles: true
-   failed-labels: false
-   test-duration: true
-   dump-csv: Eva.csv
+- module: junit-xml
+  filename: Evajunit.xml
