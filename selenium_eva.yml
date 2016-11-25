@@ -10,10 +10,19 @@ scenarios:
     script: Eva_Login_Page.js
 
 reporting:
+- module: junit-xml
+  filename: EvaSelenium.xml
+  data-source: pass-fail
+  
 - module: final_stats
-  summary: true  # overall samples count and percent of failures
-  percentiles: true  # display average times and percentiles
-  failed-labels: false  # provides list of sample labels with failures
-  test-duration: true  # provides test duration
-  dump-xml: selenium.xml
+  summary: true
+  percentiles: true
+  failed-labels: false
+  test-duration: true
   dump-csv: selenium.csv
+  
+services:
+- module: passfail
+criteria:
+  - fail>5% for 10s, stop as failed
+  
