@@ -1,0 +1,19 @@
+---
+execution:
+- executor: selenium
+  concurrency: 20
+  hold-for: 5m
+  ramp-up: 60s
+  scenario: Selenium_Eva
+scenarios:
+  Selenium_Eva:
+    script: Eva_Login_Page.js
+
+reporting:
+- module: final_stats
+  summary: true  # overall samples count and percent of failures
+  percentiles: true  # display average times and percentiles
+  failed-labels: false  # provides list of sample labels with failures
+  test-duration: true  # provides test duration
+  dump-xml: selenium.xml
+  dump-csv: selenium.csv
