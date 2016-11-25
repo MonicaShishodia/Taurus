@@ -1,6 +1,6 @@
 var assert = require('assert'),
-test = require('C:/Users/eqruuwq/node_modules/selenium-webdriver/testing'),
-webdriver = require('C:/Users/eqruuwq/node_modules/selenium-webdriver');
+test = require('D:/DataTransfer/node_modules/selenium-webdriver/testing'),
+webdriver = require('D:/DataTransfer/node_modules/selenium-webdriver');
  
 test.describe('Eva Login page', function() {
   test.it('should work', function() {
