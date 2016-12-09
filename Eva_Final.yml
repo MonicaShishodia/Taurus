@@ -26,4 +26,4 @@ reporting:
 services:
 - module: passfail
 criteria:
-  - fail>5% for 10s, stop as failed
+  - fail>25% for 50s, stop as failed
