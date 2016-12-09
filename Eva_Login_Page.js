@@ -3,7 +3,7 @@ test = require('C:/Program Files (x86)/nodejs/node_modules/selenium-webdriver/te
 webdriver = require('C:/Program Files (x86)/nodejs/node_modules/selenium-webdriver');
  
 test.describe('Eva Login page', function() {
- this.timeout(5000);
+ this.timeout(15000);
   test.it('should work', function() {
     var driver = new webdriver.Builder().
     withCapabilities(webdriver.Capabilities.chrome()).
