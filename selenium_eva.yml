@@ -1,7 +1,7 @@
 ---
 execution:
 - executor: selenium
-  concurrency: 20
+  concurrency: 1
   hold-for: 5m
   ramp-up: 60s
   scenario: Selenium_Eva
